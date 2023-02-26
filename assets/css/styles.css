@@ -4,3 +4,213 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #17151E;
+  color: #FFFFFF;
+  font-family: 'Hanalei Fill';
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  width: fit-content;
+  margin: 100px auto;
+}
+
+h1.gradient-text {
+  background: linear-gradient(89.96deg, #2AFF07 -34.24%, #FFFA36 54.5%, #2AFF07 161.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Nav Bar */
+
+.navbar.nav-scroll {
+  border-bottom: 3px solid #DBCFC4;
+}
+
+.navbar.nav-scroll.scrolled::before {
+  background: #17151E;
+}
+
+.navbar.nav-scroll.scrolled::after {
+  background: linear-gradient(354.5deg, #303030 -20.73%, rgba(69, 69, 69, 0.462386) 39.45%, rgba(156, 156, 156, 0) 91.2%);
+}
+
+.navbar.nav-scroll.scrolled::before, .navbar.nav-scroll.scrolled::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.navbar .navbar-brand img {
+  width: 125px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #FEFEFF;
+  font-size: 22px;
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after, .navbar-nav .show > .nav-link {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(89.96deg, #2AFF07 -34.24%, #FFFA36 54.5%, #2AFF07 161.59%);
+  border-radius: 50px;
+}
+
+.navbar .navbar-nav .nav-item:last-child .nav-link {
+  padding: 0 20px;
+  background: linear-gradient(#17151E, #17151E) padding-box, linear-gradient(to right, #2AFF07, #FFFA36,#2AFF07) border-box;
+  border-radius: 50px;
+  border: 4px solid transparent;
+  margin-left: 15px;
+}
+
+.navbar .navbar-nav .nav-item:not(:last-child) {
+  margin: 0 15px;
+}
+
+/* Home */
+
+#home {
+  padding: 200px 0 125px 0;
+}
+
+#home .container .row {
+  border-bottom: 3px solid #DBCFC4;
+  padding-bottom: 75px;
+}
+
+#home .container .row .col-left h2 {
+  background: linear-gradient(89.96deg, #2AFF07 -34.24%, #FFFA36 54.5%, #2AFF07 161.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 10px auto;
+}
+
+#home .container .row .col-left h4 {
+  line-height: 30px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+#home .container .row .col-left h2, #home .container .row .col-left h4 {
+  width: 450px;
+}
+
+#home .container .row .col-left div {
+  display: flex;
+  justify-content: center;
+}
+
+#home .container .row .col-left a {
+  margin: 30px 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .container .row .col-left a.btn-l {
+  border: 3px solid #DBCFC4;
+  transform: rotate(-4deg);
+  width: 150px;
+  height: 50px;
+}
+
+#home .container .row .col-left a.btn-l span {
+  transform: rotate(4deg);
+}
+
+#home .container .row .col-left a.btn-r span {
+  background: linear-gradient(89.96deg, #2AFF07 -34.24%, #FFFA36 54.5%, #2AFF07 161.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home .container .row .col-left a.btn-r {
+  padding: 0 20px;
+  background: linear-gradient(#17151E, #17151E) padding-box, linear-gradient(to right, #2AFF07, #FFFA36,#2AFF07) border-box;
+  border-radius: 50px;
+  border: 4px solid transparent;
+}
+
+#home .container .row .col-right {
+  text-align: center;
+}
+
+#home .container .row .col-right img {
+  width: 400px;
+}
+
+/* About */
+
+#about {
+  padding: 50px 0 0 0;
+}
+
+#about .container .row .col .img-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about .container .row .col-left .img-container {
+  transform: rotate(-7deg);
+}
+
+#about .container .row .col-right .img-container {
+  transform: rotate(7deg);
+}
+
+#about .container .row .col-left .img-container, #about .container .row .col-right .img-container {
+  margin-top: 20px;
+}
+
+#about .container .row .col .img-container * {
+  margin: -30px 0;
+}
+
+#about .container .row .col .img-container img {
+  width: 300px;
+  filter: drop-shadow(0px 4px 40px #FFFA36);
+}
+
+#about .container .row .col .img-container .green-box-gradient {
+  width: 320px;
+  height: 200px;
+  background: linear-gradient(89.96deg, #2AFF07 -34.24%, #FFFA36 54.5%, #2AFF07 161.59%);
+  box-shadow: 0px 8px 11px 3px rgba(42, 255, 7, 0.82);
+  backdrop-filter: blur(92.5px);
+  -webkit-backdrop-filter: blur(92.5px);
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .container .row .col .img-container .green-box-gradient span {
+  font-size: 40px;
+  -webkit-text-stroke: 2px #000000;
+}
+
+/* Tokenomics */
+
+/* Roadmap */
+
+/* Team */
+
+/* Footer */
+
