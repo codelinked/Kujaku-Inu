@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #17151E;
   color: #FFFFFF;
@@ -16,9 +20,13 @@ section {
   justify-content: center;
 }
 
+section:not(#home) {
+  padding: 40px 0;
+}
+
 h1 {
   width: fit-content;
-  margin: 100px auto;
+  margin: 0 auto 100px;
 }
 
 h1.gradient-text {
@@ -85,7 +93,7 @@ h1.gradient-text {
 /* Home */
 
 #home {
-  padding: 200px 0 125px 0;
+  padding: 140px 0 40px;
 }
 
 #home .container .row {
@@ -104,6 +112,12 @@ h1.gradient-text {
   line-height: 30px;
   text-align: justify;
   margin: 0 auto;
+}
+
+#home .container .row .col-left h4 span {
+  background: linear-gradient(89.96deg, #2AFF07 -34.24%, #FFFA36 54.5%, #2AFF07 161.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #home .container .row .col-left h2, #home .container .row .col-left h4 {
@@ -157,8 +171,9 @@ h1.gradient-text {
 
 /* About */
 
-#about {
-  padding: 50px 0 0 0;
+#about .container .row {
+  border-bottom: 3px solid #DBCFC4;
+  padding-bottom: 150px;
 }
 
 #about .container .row .col .img-container {
@@ -208,9 +223,66 @@ h1.gradient-text {
 
 /* Tokenomics */
 
+#tokenomics .container .row {
+  border-bottom: 3px solid #DBCFC4;
+  padding-bottom: 50px;
+}
+
+#tokenomics .container .row .col img {
+  width: 100%;
+  margin: -100px 0 -50px;
+}
+
 /* Roadmap */
 
-/* Team */
+#roadmap .container .row {
+  border-bottom: 3px solid #DBCFC4;
+  padding-bottom: 50px;
+}
+
+#roadmap .container .row .col:nth-child(even) {
+  margin: 50px 0;
+}
+
+#roadmap .container .row .col div {
+  box-shadow: 6px 8px 11px 3px rgba(42, 255, 7, 0.82);
+  background: linear-gradient(#17151E, #17151E) padding-box, linear-gradient(to right, #2AFF07, #FFFA36,#2AFF07) border-box;
+  border: 3px solid transparent;
+  border-radius: 12px;
+  width: 475px;
+  height: 614px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#roadmap .container .row .col div ul li {
+  margin: 0 35px;
+  font-size: 30px;
+  list-style-image: url("../../assets/img/list-style.png");
+}
 
 /* Footer */
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer div img {
+  width: 125px;
+}
+
+footer div img, div.icons {
+  margin: 0 20px;
+}
+
+footer .icons .fab {
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+footer p {
+  text-align: center;
+  margin: 25px 0;
+}
 
