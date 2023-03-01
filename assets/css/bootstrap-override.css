@@ -8,6 +8,10 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar-toggler-icon {
   margin-bottom: -5px;
   background-image: none;
