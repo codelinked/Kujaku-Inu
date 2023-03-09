@@ -216,7 +216,7 @@ h1.gradient-text {
 /* Home */
 
 #home {
-  padding: 140px 0 40px;
+  padding: 200px 0 50px;
 }
 
 #home .container .row {
@@ -799,8 +799,31 @@ footer div img, div.icons {
   }
 }
 
+footer .icons svg {
+  font-size: 14px;
+  margin: -4px 16px 0;
+}
+
+@media (min-width: 576px) {
+  footer .icons svg {
+    margin: -4px 14px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  footer .icons svg {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .icons svg {
+    font-size: 18px;
+  }
+}
+
 footer .icons .fab {
-  margin: 0 14px;
+  margin: 10px 16px;
   font-size: 15px;
 }
 
@@ -813,7 +836,6 @@ footer .icons .fab {
 
 @media (min-width: 992px) {
   footer .icons .fab {
-    margin: 0 15px;
     font-size: 20px;
   }
 }
