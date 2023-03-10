@@ -775,7 +775,6 @@ footer div.icons p {
 @media (min-width: 576px) {
   footer div.icons p {
     font-size: 12px;
-    min-width: 275px;
     max-width: 100%;
   }
 }
