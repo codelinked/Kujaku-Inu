@@ -358,10 +358,45 @@ h1.gradient-text {
   }
 }
 
-@media (min-width: 992px) {
-  #home .container .row .col-right img {
-    width: 400px;
+#home .container .row.partnership {
+  margin-top: 75px;
+}
+
+#home .container .row .col h2.text-center {
+  font-size: 17px;
+}
+
+@media (min-width: 768px) {
+  #home .container .row .col h2.text-center {
+    font-size: 24px;
   }
+}
+
+@media (min-width: 992px) {
+  #home .container .row .col h2.text-center {
+    font-size: 30px;
+  }
+}
+
+#home .container .row .col .card-group .card {
+  margin: 30px 50px;
+  background-color: transparent;
+}
+
+@media (min-width: 576px) {
+  #home .container .row .col .card-group .card {
+    margin: 20px 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  #home .container .row .col .card-group .card {
+    margin: 25px 15px;
+  }
+}
+
+#home .container .row .col .card-group .card img {
+  border-radius: 0;
 }
 
 /* About */
