@@ -283,7 +283,7 @@ h1.gradient-text {
   -webkit-text-fill-color: transparent;
 }
 
-#home .container .row .col-left div {
+#home .container .row .col-left div:not(.clock) {
   display: flex;
   justify-content: center;
 }
@@ -367,7 +367,7 @@ h1.gradient-text {
 
 @media (min-width: 768px) {
   #home .container .row .col-right img {
-    width: 300px;
+    width: 350px;
   }
 }
 
