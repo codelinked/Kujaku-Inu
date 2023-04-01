@@ -17,3 +17,10 @@ a:hover {
   background-image: none;
 }
 
+@media (min-width:576px) {
+  .card-group > .card {
+    flex: 1 0 250px;
+    margin-bottom: 0;
+  }
+}
+

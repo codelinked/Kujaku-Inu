@@ -312,13 +312,13 @@ h1.gradient-text {
 #home .container .row .col-left a.btn-l {
   border: 3px solid #DBCFC4;
   transform: rotate(-4deg);
-  width: 120px;
+  width: 130px;
   height: 50px;
 }
 
 @media (min-width: 768px) {
   #home .container .row .col-left a.btn-l {
-    width: 110px;
+    width: 130px;
   }
 }
 
@@ -339,7 +339,7 @@ h1.gradient-text {
 }
 
 #home .container .row .col-left a.btn-r {
-  padding: 0 20px;
+  padding: 0 35px;
   background: linear-gradient(#17151E, #17151E) padding-box, linear-gradient(to right, #2AFF07, #FFFA36,#2AFF07) border-box;
   border-radius: 50px;
   border: 4px solid transparent;
@@ -347,7 +347,7 @@ h1.gradient-text {
 
 @media (min-width: 768px) {
   #home .container .row .col-left a.btn-r {
-    padding: 0 15px;
+    padding: 0 30px;
   }
 }
 
@@ -400,7 +400,13 @@ h1.gradient-text {
 
 @media (min-width: 576px) {
   #partners .container .row .col .card-group .card {
-    margin: 20px 5px;
+    margin: 15px 75px;
+  }
+}
+
+@media (min-width: 768px) {
+  #partners .container .row .col .card-group .card {
+    margin: 20px 100px;
   }
 }
 
