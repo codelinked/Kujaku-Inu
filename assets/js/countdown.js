@@ -3,4 +3,8 @@ $("#getting-started")
     $(this).text(
       event.strftime('%D day %H:%M:%S')
     );
+  }).on('finish.countdown', function(event) {
+    $(this).html('PRESALE ENDED!')
+      .parent().addClass('disabled');
+    $("h3.text-center").css("visibility", "hidden");
   });
