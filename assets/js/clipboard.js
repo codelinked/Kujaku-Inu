@@ -1,0 +1,1 @@
+let copyclip = new ClipboardJS('.clipboard');

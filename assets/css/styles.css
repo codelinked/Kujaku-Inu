@@ -226,6 +226,22 @@ h1.gradient-text {
   }
 }
 
+/* Modal */
+
+#modal-1 {
+  color: #17151e;
+}
+
+#modal-1 p {
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+#modal-1 a {
+  color: #0046ae;
+  font-size: 16px;
+}
+
 /* Home */
 
 #home {
@@ -369,6 +385,14 @@ h1.gradient-text {
   #home .container .row .col-right img {
     width: 350px;
   }
+}
+
+#home .container .row .col-right #contract-address {
+  width: 350px;
+}
+
+#home .container .row .col-right .clipboard {
+  margin-left: 5px;
 }
 
 /* Partners */
