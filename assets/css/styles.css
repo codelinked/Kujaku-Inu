@@ -388,7 +388,25 @@ h1.gradient-text {
 }
 
 #home .container .row .col-right #contract-address {
-  width: 350px;
+  width: 250px;
+}
+
+@media (min-width: 576px) {
+  #home .container .row .col-right #contract-address {
+    width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  #home .container .row .col-right #contract-address {
+    width: 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  #home .container .row .col-right #contract-address {
+    width: 350px;
+  }
 }
 
 #home .container .row .col-right .clipboard {
