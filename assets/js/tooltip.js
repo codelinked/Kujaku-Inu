@@ -1,4 +1,8 @@
 tippy('.clipboard', {
-  content: 'copied!',
+  content: 'copy',
+});
+
+tippy('.clipboard', {
+  content: 'copied!✅',
   trigger: 'click',
 });
