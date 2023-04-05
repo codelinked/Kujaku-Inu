@@ -3,6 +3,6 @@ tippy('.clipboard', {
 });
 
 tippy('.clipboard', {
-  content: 'copied!✅',
+  content: 'copied!',
   trigger: 'click',
 });
